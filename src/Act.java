@@ -3,6 +3,15 @@ public class Act {
     private double bookingPrice;
     private String actName;
 
+    @Override
+    public String toString() {
+        return "Act{" +
+                "contract='" + contract + '\'' +
+                ", bookingPrice=" + bookingPrice +
+                ", actName='" + actName + '\'' +
+                '}';
+    }
+
     public Act(String contract, double bookingPrice, String actName) {
         this.contract = contract;
         this.bookingPrice = bookingPrice;
