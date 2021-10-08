@@ -2,21 +2,20 @@ import java.util.Arrays;
 import java.util.Date;
 
 public class Schedule {
-    private Date[] startActTimes;
     private Venue scheduledVenue;
     private Act[] scheduledAct;
 
     @Override
     public String toString() {
         return "Schedule{" +
-                "startActTimes=" + Arrays.toString(startActTimes) +
-                ", scheduledVenue=" + scheduledVenue +
-                ", scheduledAct=" + Arrays.toString(scheduledAct) +
+                "scheduledVenue=" + scheduledVenue +
+                ", scheduledAct=" + Arrays.toString(scheduledAct) + "\n" +
                 '}';
     }
 
-    public Schedule(Date[] startActTimes, Venue scheduledVenue, Act[] scheduledAct) {
-        this.startActTimes = startActTimes;
+
+
+    public Schedule(Venue scheduledVenue, Act[] scheduledAct) {
         this.scheduledVenue = scheduledVenue;
         this.scheduledAct = scheduledAct;
     }

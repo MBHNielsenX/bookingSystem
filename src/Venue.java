@@ -6,7 +6,7 @@ public class Venue {
     public String toString() {
         return "Venue{" +
                 "venueName='" + venueName + '\'' +
-                ", location='" + location + '\'' +
+                ", location='" + location + '\'' + "\n" +
                 '}';
     }
 
